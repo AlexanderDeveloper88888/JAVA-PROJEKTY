@@ -1,27 +1,14 @@
-package Zadanie2;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class main {
+public class Tester {
     public static void main(String[] args) {
+        System.out.println("siema");
+
+        System.setProperty("webdriver.gecko.driver", "C:\\Automation\\Selenium\\Drivers\\FirefoxDriver\\Latest\\geckodriver.exe");
+        FirefoxDriver firefoxDriver = new FirefoxDriver();
+
+        System.out.println("Launching Firefox...");
+        System.exit(0);
 
     }
 }
-//sealed <--
-//sealed class
-//non-sealed class
-//permits
-
-/*
-switch (day) {
-    case MONDAY:
-    case FRIDAY:
-}
-
-static String formatterPatternSwitch(Object o) { /PatternMatching
-    return switch(o) {
-    case Integer i -> String.format("int %d, i");
-    case Long l -> String.format("long %d", l);
-    case Double d -> String,format("double %f", d);
-    case String s -> String.format("String %s", s);
-    };
-}
-*/
