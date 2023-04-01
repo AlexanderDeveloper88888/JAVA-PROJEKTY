@@ -1,27 +1,27 @@
-package Zadanie1;
-
-import java.util.List;
-import java.util.ArrayList;
+package Zadanie2;
 
 public class main {
     public static void main(String[] args) {
-        List<Product> produkty = new ArrayList<>();
-        produkty.add(new Product("Deska", "description", 1000));
-        produkty.add(new Product("Kanapka", "Z szynką", 200));
-        produkty.add(new Product("bułka", "costam", 12));
-        produkty.add(new Product("Mleko", "Biale", 501));
-        produkty.add(new Product("chleb", "krojony", 5));
 
-        List<Product> produkty2 = produkty.stream()
-                .filter((x) -> x.name().startsWith("D"))
-                .filter((x) -> x.quantity() > 500).toList();
-
-        System.out.print(produkty2);
     }
 }
+//sealed <--
+//sealed class
+//non-sealed class
+//permits
 
 /*
-dodaj 5 nowych produktow > sreeam odfiltruj rekordy, ktore maja:
-D jako 1 litere
-x>500
- */
+switch (day) {
+    case MONDAY:
+    case FRIDAY:
+}
+
+static String formatterPatternSwitch(Object o) { /PatternMatching
+    return switch(o) {
+    case Integer i -> String.format("int %d, i");
+    case Long l -> String.format("long %d", l);
+    case Double d -> String,format("double %f", d);
+    case String s -> String.format("String %s", s);
+    };
+}
+*/
